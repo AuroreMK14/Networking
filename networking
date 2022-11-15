@@ -1,0 +1,80 @@
+Hosts: 
+  Are any devices which sends and recieve traffic over a network e.g computer, laptop, phones, printers, servers, cloudservers, TVs, smartwatches etc
+  Client initiate requests, server respond
+  Server: Are computer with software  installed which respond to specific requests
+
+IP Address: It is the identity of a host e.g server ip address and destination ip address
+  IP Address are 32bites
+  Bit = 1 or 0
+  Respresented as 4 octets e.g 1000 1000 . 0001 0110 . 0001 0001 . 0110 0010
+  Ranges from 0 - 255 e.g 136 . 22 . 17 . 98
+
+Network: It is simply a logical grouping of hosts which requires similar connectivity
+  It is what transports traffic between hosts 
+  Anytime hosts are connected, you have network
+  Network connects to other networks through the internet
+
+Repeaters: Regenerate signals
+  Allow communications accross greater distances but this does not scale
+
+Hub: Are simply multi-port repeaters
+  Facilitate scaling communication between additional hosts
+  Everyone recieves everyone data
+
+Bridge: Sits in between hub-connected hosts
+  Bridges only have 2 ports. one connected to one hub connected devices and the other connected to the other hub connected devices
+  Bridges learn which hosts are on each side
+
+Switches: Is the process of moving data between networks
+  Facilitate communication within a network
+  Are a combination of hubs and bridges
+  Multiple ports
+  Learns which hosts are on each port
+  Hosts on a network share thesame IP address space and share thesame network
+
+Router: Is the process of moving data within networks
+   Facilitate communication between networks
+   Provide traffic control point (security, filtering, redirecting)
+   Learn which network they are attached to
+   Know as routes stores in a Routing table
+   Routing table : All networks a routers knows about
+   Gateway: Each host's way out of their local network
+
+Other networking devices: 
+   Firewalls
+   Load Balancers
+   Proxies
+   Virtual routers
+   Virtual switches
+   IDS/ IPS
+   Layer 3 switches
+   Access points
+
+#OSI Model
+   Divided into 7 different parts which are:
+   Layer 1 - Physical - Transporting bites
+     Computer data exists in the form of bites (1's and 0's)
+     Something has to transfer bites between hosts
+     L1 Technologies are cables, wifi, repeaters, hubs
+   Layer 2 - Data link - Hop to Hop
+     Interact with wire (i.e physical layer)
+     NIC - Network Interferace card / Wi-Fi Access Cards
+     Addressing scheme - MAC addresses
+     L2 Technologies are NIC'S, Switches
+     often communication between hosts requires multiple hops
+   Layer 3 - Network - End to End
+     Addressing scheme - IP addresses
+     L3 Technologies are Routers, Hosts (anything with an IP)
+     ARP - Address Resolution Protocol - links a L3 address to a L2 address
+   Layer 4 - Transport - service to service
+     Distinguish data streams
+     Addressing scheme - ports
+     0 - 65535 - TCP - favors reliability
+     0 - 65535 - UDP - favors efficiency
+     servers listen for requests to predefined ports
+     clients select random port for each connection
+   Layer 5, 6, and 7 - Session, Presentation, Application - consider as an Application
+   
+   Sending: Encappsulation - from level 7 to 1
+   Recieving: De-Encapsulation - from level 1 to 7
+
